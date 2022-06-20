@@ -29,18 +29,14 @@ public class ChartService {
 		CandleStickChart candleStickChart=new CandleStickChart("BTC/USDT Chart");
 		//iterate all candles and add them to the chart
 
-		//just add first 7 data
-		int counter=0;
+
 		for(Candle candle :candles ){
 
-			counter++;
 
 			candleStickChart.addCandle(candle.getTime(),candle.getOpen(),candle.getHigh(),candle.getLow(),candle.getClose(),candle.getVolume());
 
 			//added counter to prevent out of memory heap space error
-		if(counter>7){
-		break;
-		}
+
 		}
 
 

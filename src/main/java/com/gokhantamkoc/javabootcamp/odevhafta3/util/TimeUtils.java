@@ -22,7 +22,7 @@ public class TimeUtils {
 	public static Date convertToDate(long millis) {
 		// Bu metodu doldurmanizi bekliyoruz.
 
-		Date date=new java.util.Date((long)millis*1000);
+		Date date=new java.util.Date((long)millis);
 		return date;
 	}
 }
